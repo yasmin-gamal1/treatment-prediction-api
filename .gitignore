@@ -1,0 +1,9 @@
+model.pkl
+# .gitignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+venv/
+*.env
