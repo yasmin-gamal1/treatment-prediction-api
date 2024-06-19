@@ -1,9 +1,11 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import joblib
 import numpy as np
 import os
 
 app = Flask(__name__)
+CORS(app)  # This will enable CORS for all routes
 
 # Load the trained model
 model = joblib.load('model.pkl')
